@@ -89,8 +89,7 @@ version and what you did.
 ## Source code
 
 SampQOL OS is closed source for now. When Akai shares more about its open
-firmware plans, I will decide about the source. If I stop the project, I
-will publish a version that anyone may share.
+firmware plans, I will decide about the source.
 
 ## License
 
