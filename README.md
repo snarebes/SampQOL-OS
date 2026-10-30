@@ -20,7 +20,8 @@ manual.
 - Up to 16 drum tracks, each with its own 8 banks
 - Step Edit: a Pad View with a step sequencer, and a Track View with one row for each track
 - Record pad mutes and track mutes into a sequence
-- Automate (fades), erase all automation at once
+- Automate: fade the volume, low-pass or high-pass filter in or out
+  (Linear, Log or S-Curve), erase all automation at once
 - Select, name, explode and delete tracks and sequences
 
 **Mixing and export**
@@ -31,9 +32,12 @@ manual.
 
 **Sampling and chopping**
 - Chop Mode with 128 slices, Link Slices and Extract
+- Chop guard: after you edit slices by hand, a new Chop Type asks first.
+  You do not lose your chops by accident.
 - Sample Tail
 - To Seq and Looper in Sample Record
-- Preview samples and make new folders in Sample Select
+- Preview samples with their own preview volume, and make new folders in
+  Sample Select
 
 **Playing**
 - 16 Levels with Scale, Chord and Arp
