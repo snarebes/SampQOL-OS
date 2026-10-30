@@ -47,7 +47,8 @@ manual.
 ## Buttons that work differently
 
 - **SHIFT** + **SAMPLE** opens the Pad View (Step Edit). Stock: Input Config.
-- **PAD FX** opens the Mixer. Stock: Pad FX.
+- **PAD FX** opens the Mixer. Stock: Pad FX. To open Pad FX: **SHIFT** +
+  **PAD FX** (Flex Beat), then **B2**.
 - Select a track: hold **PAD BANK** and turn the encoder, or push
   **SHIFT** + **PAD BANK** + a pad (1-16).
 - **Settings > Shortcuts** gives back the stock screens.
