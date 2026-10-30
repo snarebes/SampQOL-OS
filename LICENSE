@@ -1,0 +1,65 @@
+SampQOL OS License
+
+Copyright (c) 2026 Snare Bes. All rights reserved.
+
+1. What this covers
+
+This license covers SampQOL OS: the mpcqol.so module, the autorun and
+helper scripts, the splash image, the screens, layouts and texts it adds
+to an MPC Sample, and its manual and release notes ("SampQOL OS").
+
+It does not cover the MPC Sample firmware or app. Those are the property
+of inMusic Brands, Inc. SampQOL OS contains no part of them.
+
+2. What you may do
+
+- Use SampQOL OS on an MPC Sample that you own or may use.
+- Use it for any purpose, including commercial work and live
+  performance. What you make with it is yours.
+- Study, decompile and modify SampQOL OS for your own use.
+
+3. Sharing
+
+SampQOL OS comes only from the official download:
+https://github.com/snarebes/SampQOL-OS/releases
+This way, every user gets the latest version and can check its SHA256.
+Please share the link, not the files.
+
+Without written permission, you may not:
+
+- Upload, host or otherwise distribute SampQOL OS, or a modified
+  version of it. A link to the official download is always OK.
+- Sell, rent or charge for SampQOL OS or for access to it.
+- Remove this license or any copyright notice, or present SampQOL OS
+  as your own work.
+
+Do you want to share a modified version or host a mirror? Ask me on
+the GitHub page. I am happy to talk about it.
+
+4. No warranty
+
+SampQOL OS is an unofficial modification. It is provided "as is",
+without any warranty. To the extent the law allows, the author is not
+liable for any damage to devices, loss of data, samples or projects, or
+loss of income.
+
+The use of SampQOL OS can affect your warranty or support from inMusic
+Brands, Inc.
+
+5. Trademarks
+
+SampQOL OS is not affiliated with, endorsed by or supported by inMusic
+Brands, Inc. or Akai Professional. Akai Professional, MPC and MPC Sample
+are trademarks of their owners.
+
+Do not contact Akai Professional or inMusic support about SampQOL OS.
+Before you ask them for help, remove the autorun folder from the card
+and make sure that the problem also occurs on the stock MPC Sample.
+
+6. Termination
+
+If you break these terms, the rights in section 2 end at once.
+
+7. Law
+
+The law of the Netherlands applies to this license.
