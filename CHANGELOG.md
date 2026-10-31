@@ -16,6 +16,28 @@ SampQOL OS (c) 2026 Snare Bes. All rights reserved. See LICENSE.txt.
 Akai Professional, MPC and MPC Sample are trademarks of inMusic Brands, Inc.
 
 
+Version 0.1.4.8 (31 October 2026)
+---------------------------------
+
+SEQUENCES AND TRACKS
+
+- Explode: a pad with Out Master goes to Out Track on its new track, so
+  the track strip meters, mutes and sets its volume.
+
+MIXER AND EFFECTS
+
+- Mixer: B1 shows the submix that the current pad (or its track) goes to.
+
+FIXED
+
+- The SD card works with each card name. In 0.1.4.7 a card with a name
+  other than "MPC" (for example "MPC SAMPLE", the name the MPC gives when it
+  formats a card) showed "No SD card" on the folder pages, saved projects
+  and exports on Internal, and did not keep the Settings.
+- Mixer: the Ch. Mixer and Pad Mixer screens do not flicker during
+  playback.
+
+
 Version 0.1.4.7 (30 October 2026)
 ---------------------------------
 
@@ -46,7 +68,8 @@ BUTTONS THAT WORK DIFFERENTLY
 
 START-UP AND SAFETY
 
-- At start-up, the MPC asks "Start SampQOL OS?". Cancel = stock 1.3.0.
+- At start-up, the MPC asks "Start SampQOL OS?". B1 = Start.
+  B3 = Cancel = stock 1.3.0.
 - A start-up screen shows the logo and the version. Ready in about 17 s.
 - A watchdog starts the mod again after a crash. Two crashes = stock.
 - On a firmware other than 1.3.0, the MPC starts as stock.
@@ -194,6 +217,8 @@ FIXED (STOCK PROBLEMS)
 
 KNOWN ISSUES
 
+- At start-up, the question "Start SampQOL OS?" can stay hidden behind the
+  loading screen (0.0%). Push B1 to start SampQOL OS, B3 for stock.
 - A stock MPC Sample loads only the first drum track of a SampQOL project.
   Recorded pad mutes and the Track Volume do not play there.
 - Without SampQOL OS, the Pad EQ and a Hidden master effect do not play, and
