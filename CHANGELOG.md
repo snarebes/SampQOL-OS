@@ -27,6 +27,11 @@ START-UP AND SAFETY
   "autorun-off"), or move it off the top level of the card. See the MANUAL,
   Troubleshooting.
 
+FIXED
+
+- FULL LEVEL (SHIFT + PAD 1) works in the Pad View and the Track View: each
+  new note from a pad has full velocity.
+
 
 Version 0.1.4.8 (31 October 2026)
 ---------------------------------
