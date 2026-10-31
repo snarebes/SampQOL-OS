@@ -2,8 +2,8 @@ SampQOL OS Release Notes
 ========================
 
 SampQOL OS is a mod for the MPC Sample firmware 1.3.0. It starts from the
-SD card and does not flash the device. Without the SD card (or with
-Cancel), the MPC starts as stock 1.3.0.
+SD card and does not flash the device. Without the SD card, the MPC starts
+as stock 1.3.0.
 
 These notes show all that SampQOL OS does differently from stock 1.3.0.
 See the MANUAL for how to use each function.
@@ -14,6 +14,17 @@ Tested only with MPC Sample 1.3.0. MPC One, Live and X are not tested yet.
 
 SampQOL OS (c) 2026 Snare Bes. All rights reserved. See LICENSE.txt.
 Akai Professional, MPC and MPC Sample are trademarks of inMusic Brands, Inc.
+
+
+Version 0.1.4.9 (31 October 2026)
+---------------------------------
+
+START-UP AND SAFETY
+
+- With the SD card in, SampQOL OS starts by itself at start-up, without a
+  question. Without the SD card, the MPC starts as stock 1.3.0.
+- Stock with the SD card in: move the folder "autorun" off the top level of
+  the card. See the MANUAL, Troubleshooting.
 
 
 Version 0.1.4.8 (31 October 2026)
@@ -217,8 +228,6 @@ FIXED (STOCK PROBLEMS)
 
 KNOWN ISSUES
 
-- At start-up, the question "Start SampQOL OS?" can stay hidden behind the
-  loading screen (0.0%). Push B1 to start SampQOL OS, B3 for stock.
 - A stock MPC Sample loads only the first drum track of a SampQOL project.
   Recorded pad mutes and the Track Volume do not play there.
 - Without SampQOL OS, the Pad EQ and a Hidden master effect do not play, and

@@ -5,8 +5,8 @@ SampQOL OS is a free mod for the Akai Professional MPC Sample. It adds up to
 export and more to the stock app.
 
 - It starts from the SD card. It does not flash the MPC.
-- Without the SD card, or with **Cancel** at start-up, the MPC starts as
-  stock 1.3.0.
+- With the SD card in, SampQOL OS starts by itself. Without the SD card,
+  the MPC starts as stock 1.3.0.
 - Tested only with MPC Sample firmware 1.3.0. MPC One, Live and X are not
   tested yet.
 
@@ -75,9 +75,15 @@ Download SampQOL OS only from this page. Do not upload or share the zip
 2. Unzip the zip file. Copy the folder `autorun` to the root of an exFAT
    microSD card.
 3. Set the MPC off. Put the card in the MPC. Set the MPC on.
-4. The display asks "Start SampQOL OS?". Select **Start**.
+4. SampQOL OS starts by itself. You do not push a button.
 
-Go back to stock: delete the folder `autorun` from the card.
+Go back to stock: set the MPC on without the card. To use the card on stock,
+move the folder `autorun` into a different folder on the card. Move it back
+to start SampQOL OS again.
+
+If the MPC hangs at start-up: hold the power button until the MPC goes off,
+then remove the card. See Troubleshooting in the
+[manual](https://snarebes.github.io/SampQOL-OS/).
 
 ## Manual and changes
 
