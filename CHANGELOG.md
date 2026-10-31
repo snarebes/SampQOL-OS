@@ -23,8 +23,9 @@ START-UP AND SAFETY
 
 - With the SD card in, SampQOL OS starts by itself at start-up, without a
   question. Without the SD card, the MPC starts as stock 1.3.0.
-- Stock with the SD card in: move the folder "autorun" off the top level of
-  the card. See the MANUAL, Troubleshooting.
+- Stock with the SD card in: rename the folder "autorun" (for example to
+  "autorun-off"), or move it off the top level of the card. See the MANUAL,
+  Troubleshooting.
 
 
 Version 0.1.4.8 (31 October 2026)

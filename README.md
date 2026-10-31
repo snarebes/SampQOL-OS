@@ -78,8 +78,8 @@ Download SampQOL OS only from this page. Do not upload or share the zip
 4. SampQOL OS starts by itself. You do not push a button.
 
 Go back to stock: set the MPC on without the card. To use the card on stock,
-move the folder `autorun` into a different folder on the card. Move it back
-to start SampQOL OS again.
+rename the folder `autorun` (for example to `autorun-off`), or move it into a
+different folder on the card. Name it `autorun` again to start SampQOL OS.
 
 If the MPC hangs at start-up: hold the power button until the MPC goes off,
 then remove the card. See Troubleshooting in the
