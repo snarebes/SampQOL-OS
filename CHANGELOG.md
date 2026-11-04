@@ -113,6 +113,10 @@ KNOWN ISSUES
   light shows the correct state.
 - A stock MPC Sample does not play the track mutes in a sequence that you
   made with Song Export. All tracks sound there.
+- "Insufficient space on drive" is about the internal storage, not the SD
+  card. The internal storage always keeps 200 MB free. Save your projects
+  and samples on the SD card. Keep the internal storage as stock as
+  possible.
 
 Version 0.1.4.9 (31 October 2026)
 ---------------------------------
