@@ -117,6 +117,13 @@ KNOWN ISSUES
   card. The internal storage always keeps 200 MB free. Save your projects
   and samples on the SD card. Keep the internal storage as stock as
   possible.
+- Time signature (SHIFT + K2 on the SEQ screen): each change takes about
+  3 seconds. When you turn K2 fast, the changes add up and the MPC stops
+  for some minutes. Do not turn off the MPC: it comes back by itself. Turn
+  K2 one step and wait. We are working on a fix.
+- When the MPC plays and you change the sequence (also in Song mode), you
+  can hear a short gap or click. This occurs more with many tracks or
+  effects. We are working on a fix.
 
 Version 0.1.4.9 (31 October 2026)
 ---------------------------------
