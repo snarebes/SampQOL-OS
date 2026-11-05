@@ -7,8 +7,8 @@ export and more to the stock app.
 - It starts from the SD card. It does not flash the MPC.
 - With the SD card in, SampQOL OS starts by itself. Without the SD card,
   the MPC starts as stock 1.3.0.
-- Tested only with MPC Sample firmware 1.3.0. MPC One, Live and X are not
-  tested yet.
+- Tested only with MPC Sample firmware 1.3.0 (full version number 1.3.0.12).
+  MPC One, Live and X are not tested yet.
 
 **This is beta software. Back up your projects before you use it.**
 A failed project load can delete samples. Read "Project safety net" in the
@@ -77,8 +77,9 @@ Download SampQOL OS only from [Releases](../../releases) or from
 
 1. Make sure that the MPC Sample has firmware 1.3.0. Start the MPC
    **without** the SampQOL card. Push **SHIFT** + **PAD 8** (MIDI Config). The
-   top right of the display must show **v1.3.0**. (When SampQOL OS runs, it
-   shows the SampQOL OS version there.)
+   top right of the display must show **v1.3.0**. The full version number is 1.3.0.12. The display shows only v1.3.0.
+   This is the correct firmware. (When SampQOL OS runs, it shows the
+   SampQOL OS version there.)
 2. Unzip the zip file. Copy the folder `autorun` to the root of an exFAT
    microSD card.
 3. Set the MPC off. Put the card in the MPC. Set the MPC on.
