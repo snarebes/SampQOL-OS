@@ -114,9 +114,9 @@ KNOWN ISSUES
 - A stock MPC Sample does not play the track mutes in a sequence that you
   made with Song Export. All tracks sound there.
 - "Insufficient space on drive" is about the internal storage, not the SD
-  card. The internal storage always keeps 200 MB free. Save your projects
-  and samples on the SD card. Keep the internal storage as stock as
-  possible.
+  card. The internal storage always keeps about 400 MB free. Save your
+  projects and samples on the SD card. Keep the internal storage as stock
+  as possible.
 - Time signature (SHIFT + K2 on the SEQ screen): each change takes about
   3 seconds. When you turn K2 fast, the changes add up and the MPC stops
   for some minutes. Do not turn off the MPC: it comes back by itself. Turn
