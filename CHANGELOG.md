@@ -2,8 +2,8 @@ SampQOL OS Release Notes
 ========================
 
 SampQOL OS is a mod for the MPC Sample firmware 1.3.0 (1.3.0.12). It
-starts from the SD card and does not flash the device. Without the SD
-card, the MPC starts as stock 1.3.0.
+starts from the SD card and does not change the stock firmware. Without
+the SD card, the MPC starts as stock 1.3.0.
 
 The notes of version 0.1.4.7 show all that SampQOL OS does differently
 from stock 1.3.0. Each later version shows what changed.

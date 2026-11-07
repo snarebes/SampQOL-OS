@@ -4,7 +4,7 @@ SampQOL OS is a free mod for the Akai Professional MPC Sample. It adds up to
 16 drum tracks, a step sequencer, a mixer with inserts, 128-slice chop, stem
 export and more to the stock app.
 
-- It starts from the SD card. It does not flash the MPC.
+- It starts from the SD card. It does not change the stock firmware.
 - With the SD card in, SampQOL OS starts by itself. Without the SD card,
   the MPC starts as stock 1.3.0.
 - Tested only with MPC Sample firmware 1.3.0 (full version number 1.3.0.12).
