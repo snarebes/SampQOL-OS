@@ -27,9 +27,10 @@ HIGHLIGHTS
 - Tuner: tune a sample or an instrument on the MPC. SHIFT + PAD 7 shows
   the note and how many cents it is off. Apply sets this note as the root
   note for KEYS, so a MIDI keyboard plays the sample in tune.
-- Sidechain with the Mother Ducker: the kick makes the bass softer each
-  time it plays, so the two do not fight. Put Mother Ducker Input on the
-  kick and Mother Ducker on the bass (Insert FX, group Dynamics).
+- Sidechain with the Mother Ducker: one sound makes another sound softer
+  each time it plays, for example the kick and the bass. Put Mother Ducker
+  Input on the sound that controls it and Mother Ducker on the sound that
+  gets softer (Insert FX, group Dynamics).
 - Two more insert effects: AIR Compressor and AIR Stereo Width.
 - Duplicate a track: Dup. Track copies a track to a new track directly
   after it, with all its pads, samples and effects. You select if the
