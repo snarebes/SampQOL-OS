@@ -17,6 +17,365 @@ SampQOL OS (c) 2026 Snare Bes. All rights reserved. See LICENSE.txt.
 Akai Professional, MPC and MPC Sample are trademarks of inMusic Brands, Inc.
 
 
+Version 0.2.0 (8 November 2026)
+-------------------------------
+
+All changes since version 0.1.5.
+
+HIGHLIGHTS
+
+- Tuner: tune a sample or an instrument on the MPC. SHIFT + PAD 7 shows
+  the note and how many cents it is off. Apply sets this note as the root
+  note for KEYS, so a MIDI keyboard plays the sample in tune.
+- Sidechain with the Mother Ducker: the kick makes the bass softer each
+  time it plays, so the two do not fight. Put Mother Ducker Input on the
+  kick and Mother Ducker on the bass (Insert FX, group Dynamics).
+- Two more insert effects: AIR Compressor and AIR Stereo Width.
+- Duplicate a track: Dup. Track copies a track to a new track directly
+  after it, with all its pads, samples and effects. You select if the
+  notes and the automation go along too.
+- Mute Type: select how a mute sounds. Audio stops the sound at once.
+  Event lets the notes that already sound ring out.
+- Mute groups: tracks (or submixes) in the same group mute and unmute
+  together, for example all drum tracks with one push.
+- Track mutes without a click: a muted track fades out in 5 ms, also when
+  the sequence changes.
+- MIDI out for each track: each track can play its own external synth, on
+  its own MIDI channel. Notes from Scale, Tune and KEYS go out as the note
+  that you hear.
+- Stereo for each pad: play only the left or the right channel of a stereo
+  sample, or a blend of the two.
+- Record the rear inputs and the USB audio from a computer at the same
+  time (Sample Record, Source "Rear+USB"). No more switching between them.
+- Fades for each sequence: an Automate fade (volume or filter) plays only
+  in the sequence where you wrote it. The other sequences keep their own
+  level.
+- Song mode, faster: with Quick Add (Settings > Song Pads), one pad push
+  puts its sequence in the song. In stock you push the pad and then B3.
+  Clear All (SHIFT + B2) empties the song in one step.
+- Chop Mode: Chop Type Regions and Threshold make up to 128 chops (all 8
+  pad banks). Before, the limit was 64. Set the most Threshold slices in
+  Settings (Threshold Max Slices: 16, 32, 64 or 128, default 16).
+- Loop a part: the selection loop of Step Edit (SHIFT + PLAY) keeps
+  playing on every screen, and comes back after STOP.
+- Less "Insufficient space on drive": after an edit, the MPC removes the
+  old copy of a long sample at once.
+
+NEW FUNCTIONS
+
+- Tuner: SHIFT + PAD 7 shows the note and cents of the mic, the rear
+  input, the USB audio or the MPC output (Resample). The last note stays
+  in grey. Apply sets the played note as the KEYS root note of the pad
+  (shown on the screen), with every source. SHIFT + PAD 7 was Double
+  Speed: set it back in Settings > Shortcuts.
+- Source "Rear+USB": record and monitor the rear inputs and the USB audio
+  from a computer at the same time. No more switching between them. In
+  Sample Record (K1), Input Config and the Tuner.
+- Insert FX list: 4 more effects. Dynamics has AIR Compressor, Mother
+  Ducker and Mother Ducker Input. Modulation has AIR Stereo Width.
+- Mother Ducker: put Mother Ducker Input on the sound that controls it
+  (for example the kick) and Mother Ducker on the sound that gets softer
+  (for example the bass). Set the same Bus (1-8) on both. Effect page:
+  K1 Bus, K2 Threshold, K3 Ratio; SHIFT: Attack, Release, Soft Knee.
+  The Mother Ducker only makes the sound softer: it adds no level.
+  The effect page shows the other part on the same bus, for example
+  "Input: A01 Kick" or "No Input on Bus 2". The Mother Ducker page also
+  shows its gain reduction ("GR -10" and an orange bar).
+- AIR Compressor starts neutral (0 dB, 1:1). Effect page: K1 Threshold,
+  K2 Ratio, K3 Mix; SHIFT: Attack, Release, Output.
+- AIR Stereo Width: K1 Width, K2 Level Trim, K3 Pan Trim; SHIFT: Low, Mid,
+  High.
+- Knob FX: hold KNOB FX and turn the ENCODER to change the effect on the
+  screen you are on. The effect changes when you release KNOB FX, with a
+  short fade and no click. A short push of KNOB FX sets Knob FX mode on
+  or off when you release it.
+- Fine-tune an effect with the ENCODER: open an insert effect in the
+  Mixer (for example a Reverb on a pad) and turn K1, K2 or K3. Then the
+  ENCODER changes that knob in small steps. Push the ENCODER to go to the
+  next knob (SHIFT + push: the previous knob). This also works on the EQ
+  page, the Tail page, the Scale bar and the Kill EQ page. Before, the
+  ENCODER did nothing on an effect page.
+- EQ page: SHIFT + B3 = Bypass. All pads play without the EQ, to compare.
+  Bypass goes off when you leave the EQ page.
+- Mixer: the Pad page has the row EQ under the 4 slots. B3 or the ENCODER
+  opens the EQ page of the pad. PAD FX goes back to the row EQ.
+- Stereo for each pad (Play page, SHIFT + K3): a stereo sample plays only
+  its left or right channel (mono, in the centre), or a blend of the two.
+- New setting "Mute Type" (group SEQUENCE): how a pad mute and a track
+  mute sound. Audio (default) stops the sound at once. Event stops only
+  the new notes, and the notes that sound play to their end. It is for
+  Mute mode, the Pad Mixer, Track Mute, the Ch. Mixer and Explode.
+- Mute groups for tracks and submixes: tracks (or submixes) in the same
+  group mute and unmute together. Set them with K2 (Trk Grp, Sub Grp) on
+  the Mixer. K2 on the Pad page (Pad Grp) is the stock pad Mute Grp.
+  On the Ch. Mixer and the Pad Mixer, SHIFT + K2 sets the group of the
+  selected strip. Track Mute shows the group of each track.
+- MIDI out: each track can have its own MIDI channel (on the Mixer, Track
+  page). A Scale, Tune or KEYS note of that track goes out as the real
+  note, also chords, live and in the recording. One track plays one part
+  of an external synth. Off: the track sends no MIDI. Global: the track
+  follows MIDI Config, as in stock. The track grid shows the channel.
+- Dup. Track: a copy of a track, directly after the track. All pads,
+  samples, effects and routes stay. With Events On (B2) the events
+  (notes and automation) of all sequences go along too.
+- Song mode: SHIFT + B2 (Clear All) removes all sequences from the song
+  at once. UNDO brings the song back.
+- Song mode: with Settings > Song Pads = Quick Add, a pad inserts its
+  sequence into the song at once (no B3).
+- Song mode shows the name of each sequence after its number, for example
+  "A01 Intro".
+- Automate: Remove deletes the fade of the selected target (Volume, LP
+  Filter or HP Filter) in the selection. Remove All (SHIFT) deletes all
+  fades of the selected tracks in the sequence. One UNDO brings them back.
+- Selection loop: the loop stays on every screen and after STOP. SHIFT +
+  PLAY plays it again, also with SEQ RECORD. PLAY plays from bar 1 and
+  ends the loop.
+- Track Mute: hold SEQ and push a pad to select a sequence. Track Mute
+  stays on.
+- Select a track: the grid title shows the track that you will get, for
+  example "Track 04". This also shows on the Mixer, which has no track
+  label.
+- Pad Mixer: a pad that you play selects its strip.
+- Pad View: with Steps on, hold SAMPLE and push a pad to select that row.
+  Steps stays on. While you hold SAMPLE, the pads light as on the SAMPLE
+  screen.
+- Chop Mode: Chop Type Regions also gives 128 regions, and Threshold
+  makes up to 128 slices (all 8 pad banks).
+- Chop Mode: when you tap the 16th chop of a pad bank, the next pad bank
+  shows at once. Tap the next chop on its first pad.
+- New setting "Mixer Opens On" (group FX & AUTOMATION): the page that the
+  Mixer shows when it opens. Pad inserts, Ch. Mixer or Last Used (default, as
+  before).
+- Settings > Ask Before Erase Pad: ERASE + pad asks before it erases a
+  pad with a sample (Cancel or Do It!). Default Off.
+- Settings > SAMPLE BROWSER > Fader Scrolls List: Off gives the FADER its
+  FADER menu function in the browsers again (for example Pad Volume).
+- Load Project and Load Kit check the free memory first. A project that
+  is too big for the free memory (for example 16 tracks with about 60
+  full sequences) gives the message "Not Enough Memory" and does not load,
+  so the MPC does not freeze.
+
+CHANGED FUNCTIONS
+
+- Track Mute stops the sound at once (Mute Type Audio, the default). In
+  0.1.5 a track mute in Track Mute let the notes that sound play to their
+  end. For that sound, set Mute Type to Event.
+- Automate: a fade belongs to the sequence where you write it. The other
+  sequences play your own volume or filter value.
+- Pad colours: Step Edit Play, the Track View and the Mixer Pad page show
+  the pads as the SAMPLE screen. Track Mute: green plays, red muted. While
+  you select a track (SHIFT + PAD BANK, PAD BANK after an ENCODER turn,
+  or the Mixer Track page with PAD FX held), the pads show the tracks and
+  a pad selects that track: green, the current track bright, a muted track
+  red, the ENCODER target white. PAD BANK alone still shows the bank
+  colours on pads 1 to 8.
+- UNMUTE ALL (SHIFT + MUTE) is one undo step. UNDO brings all the pad
+  mutes back. In stock it had no undo. During a recording, the MPC records
+  it, as before.
+- UNMUTE ALL (SHIFT + MUTE) also unmutes all muted tracks, on every screen.
+  In 0.1.5 it did this only in Track Mute.
+- Track View: SHIFT + B3 (Dupl/Expl) asks first: B2 Dup. Track or B3
+  Explode.
+- Explode of a track with track effects: To Submix puts the effects one
+  time on a free submix, and the new tracks go to that submix. This uses
+  much less CPU than one copy of the effects per new track.
+- Dup. Track of a track with track effects: To Submix puts the effects one
+  time on a free submix, and the track and its copy go to that submix.
+  Two tracks then use the CPU of one set of effects.
+- Chop Mode Extract to a new track, from a pad with effects: To Track puts
+  the effects one time on the new track, not on each chop pad.
+- Chop Mode: Extract asks for the pad of the (first) chop. Push a pad to
+  select it. The pad lights show where the chops go. The chops go on the
+  pads in a row from there. When a pad in the way has a sample, Do It!
+  becomes Replace. When the chops do not fit from that pad, Do It! is
+  off. Track also has New Track: the chops go to a new track after the
+  current track. Track can also replace the source pad with its own chop.
+  K2 sets the mute group of the chop pads (at the start, the group of the
+  source pad), so a chop can stop the chop before it.
+- Resample Pad: K1 sets the tail, without SHIFT. The line under "Select
+  pad" always shows the Knob FX print and the Pad FX print.
+- Resample Pad keeps the chops of a chopped pad. The new sample has the
+  same chops at the same places in the sound (also with Tune, Warp and
+  Reverse). Before, the new sample had no chops.
+- 16 Levels Scale: Chromatic is the first scale (K2). Each pad plays one
+  semitone higher. A chord plays the same chord shape on each pad.
+  After the update, K2 can show the scale before your saved scale (for
+  example Major instead of Minor). Set it again.
+- 16 Levels Scale Arp: with Chord on, the Arp plays the chord tones one
+  at a time, as the MPC arpeggiator. One pad gives an arpeggio of its
+  chord. Before, each step played the full chord.
+- COPY a pad to another track: the display shows the destination track
+  when you turn the ENCODER, also before you push a destination pad.
+- A push of SAMPLE closes Track Mute, also when you are on the SAMPLE
+  screen already.
+- The Mixer, Pad View and Track View open faster.
+- The TAP TEMPO light does not flash with the tempo. It stays on, a
+  little dimmed.
+- Settings: Knob FX List and Insert FX List are two separate lists. Hide
+  an effect in one list and keep it in the other. The Insert FX List can
+  also hide the 4 insert-only effects. After the update, the Insert FX List
+  shows all effects: open it and set Off the effects that you hid before
+  in the FX Select List.
+- Settings: the Battery Monitor is removed. Its charge did not follow the
+  battery. Use the stock battery light.
+- Stock project: if not all pads used the Knob FX on stock, the Knob FX
+  starts bypassed. Then no pad gets an effect that it did not have on
+  stock. If all pads used it, it stays on.
+- After a crash, autorun/logs/last-exit.log on the card holds the crash
+  details of the mod. Send the folder autorun/logs with a bug report.
+
+FIXED
+
+- Play page: SHIFT + ENCODER changes the knob that shows in the focus box:
+  Keys, Pad Link or Stereo. Before, with the focus on K1, it changed Mono
+  or Poly, and you did not see it.
+- Resample Pad: the new sample has the Sample Tail of the pad, and the
+  tail of a pad insert (for example a Reverb on the pad). Before, the new
+  sample could stop at the end of the slice or of the source sample.
+- Chop Mode: the chopped pad becomes Manual when you go to another track
+  in Chop Mode or Extract to a new track. The Extract pads are Manual too.
+  Before, the Manual change could go to the wrong pad. Then an MPC without
+  the mod chopped the sample again and kept only 16 slices, also for the
+  Extract pads.
+- Chop Mode: K3 (Chop Type) shows the name of each type, also Regions 32,
+  64 and 128. Before, Regions 32 showed "Manual" and the next positions
+  showed no name.
+- Chop Mode: when it opens on a pad bank without chops, it shows bank A.
+  Before, the pads were dark and did nothing, for example after you
+  resampled to a pad in bank H and opened Chop Mode on it.
+- Chop Mode: after "CHANGE CHOP TYPE", Do It! sets the Chop Type that K3
+  points to. It set the type of the first K3 step, so the result looked
+  random.
+- A new, empty track (the "+" in the track grid) starts without track
+  effects. Before, it got a copy of the track effects of the last track.
+- Explode: the new tracks get the RT Swing of the source track, in each
+  sequence. They had RT Swing 0, so the groove sounded different.
+- Load Kit onto a track keeps the samples of the other tracks. The other
+  tracks lost all their samples.
+- LOOP works on tracks 2-16: on all pads of a new track, and on the empty
+  pads of an Explode track. There, LOOP did nothing, and the LOOP icon
+  could show off while the sample looped. A project of an older version
+  gets this fix when it loads: each pad sounds as before, and the LOOP
+  icon shows if it loops.
+- Track mutes (Mute Type Audio) fade out in 5 ms, without a click. This
+  is for Track Mute, the Ch. Mixer, Solo and the track mutes of each
+  sequence (also in Song mode). Before, the sound stopped at once, with
+  a click, most of all at a sequence change.
+- Recorded track mutes and pad mutes keep playing after you select
+  another track (also with New Track). Before, a track change stopped
+  them in all sequences until the next recording or project load. Knob
+  automation (for example the filter) was not affected.
+- Track Mute on the SEQ screen stays open when you push SEQ RECORD, so
+  the pads record track mutes. Before, SEQ RECORD closed Track Mute and
+  the pads recorded notes.
+- SEQ screen: a pad press (for example to queue the next sequence) and
+  PLAY do not cause an audio drop. In 0.1.5 each press stopped the audio
+  for a short time, more with many tracks.
+- Time signature (SHIFT + K2 on the SEQ screen): a fast turn of K2 does
+  not stop the MPC. In 0.1.5 each change took about 3 seconds, and a fast
+  turn stopped the MPC for some minutes.
+- Export of another sequence than the current one: the stems use the
+  track mutes of that sequence, and the current sequence stays the same.
+  Before, a stem could be silent or missing, and the export changed the
+  current sequence. A track without notes in the sequence gives no stem
+  file. Before, it gave a silent file.
+- Copy of a sequence (SHIFT + ERASE + pad on the SEQ screen): PLAY or
+  Export after the copy does not stop the MPC, and the copy becomes the
+  current sequence. Before, the MPC switched between the two sequences for
+  up to 1 second, and with many tracks it could stop and restart.
+- Export to a card that fails: the export stops and shows which file is
+  not saved, until you push a button. Before, a write error showed a
+  short "N stems" message and the missing files gave no error.
+- Step Edit with the KNOB FX bar: the labels of B1-B3 show the stock
+  functions that these buttons do. Before, the Pad View and Track View
+  labels stayed, so SHIFT + B3 (Dupl/Expl) erased a note.
+- Mixer: hold PAD FX and turn the ENCODER fast through the pads: the MPC
+  keeps working. Before, the MPC could stop: the pads did not respond and
+  kept the Mixer colours.
+- Mixer: the On / Off of the Color Comp. and Bypass on the COMPRESSOR
+  screen are one setting. They could show different states.
+- Mixer: the slot list shows the right Reverb (Small, Medium or Large), the
+  same as the effect page. It always showed Reverb Small.
+- Pad EQ and Kill EQ: a gain knob turned fully left shows Kill. It could
+  show a very low dB value, for example -385.2.
+- Mute mode: the pad lights follow when you select another track. They
+  showed the mutes of the track before until you left Mute mode.
+- Sample Tail: the pad light goes back to normal when the tail stops. The
+  pad stayed bright until you changed the screen.
+- Tail page: ERASE + K1 or K2 erases the Tail automation of the pad. Before,
+  ERASE + knob did nothing there, so you could not erase it.
+- Project safety net: when the internal storage has less than 512 MB free,
+  it gives back the space of erased samples. Long samples could fill the
+  storage, and stock then showed "Insufficient space on drive".
+- Explode and New Track, then Undo and Redo: the new tracks keep their own
+  colour, and Explode pads stay on Out Track. Before, the new tracks got
+  the colour of the source track, and the pads went back to Out Master.
+- Explode of a track with a Mute Group, then Undo and Redo: the track of
+  the Mute Group keeps its automation. Before, the Redo erased the
+  automation of that track in the sequence.
+
+FIXED (STOCK PROBLEMS)
+
+- Song Export to a sequence keeps the RT Swing. Each track of the new
+  sequence gets the RT Swing of its sequence in the first song part.
+  Before, the new sequence played without swing.
+- Time Correct keeps all tones of a chord on one pad (16 Levels, Scale,
+  KEYS). Stock kept only one tone.
+- Song mode shows the tempo that plays. With BPM: GBL, each row shows the
+  global tempo. Stock showed the tempo of the sequence.
+- Input monitor: with Input FX Off you hear the input dry. With Input FX
+  On you hear the Knob FX one time. Stock always sent the monitor through
+  the Knob FX, with Input FX On two times.
+- Input monitor: a change of Monitor (Off, Auto, On) gives no click.
+- A long sample uses less internal storage after an edit (for example
+  Normalize) or at the end of Chop Mode. Stock kept an old copy until the
+  next save or load.
+- Normalize, Trim, Extract and Resample give each version its own sample
+  file. After Undo and a restart, no "Sample not found". Stock used a file
+  name again, and Undo deleted a file that an older version still used.
+- Resample onto a pad with a sample: no "Sample not found" two restarts
+  later. Stock deleted the replaced sample at the start, but kept it in
+  the project.
+- SD Card Access works with a card named "MPC SAMPLE" (the name the MPC
+  gives a card when it formats it). Stock did not disconnect such a card
+  from the MPC, so the MPC and the computer used it at the same time.
+  This can damage the files on the card. If the card is busy, a message
+  tells you not to copy files.
+- If the app stops during SD Card Access, the computer loses the card
+  before the MPC uses it again. Stock kept the card on the computer and
+  also used it on the MPC, so both used it at the same time.
+- Eject of the SD card in the browser: after you put the card in again,
+  your Home Folder and Export folder on the card work. Stock often made
+  empty folders where the card was, so the card got a new path and files
+  could go to memory instead of the card.
+
+KNOWN ISSUES
+
+- When the MPC plays and you change the sequence (also in Song mode), you
+  can hear a short gap. This occurs more with many tracks or effects.
+- A pad with Out set to a submix or an output still stops at once (with
+  a click) when its track gets an Audio Mute.
+- Automate: after you make a sequence with a fade longer, a change of your
+  own volume or filter value in another sequence can go back to the old
+  value after the next start. This occurs when the project saves while
+  the sequence with the fade is selected. Set the value again.
+- AIR Compressor, AIR Stereo Width and Mother Ducker are stock MPC
+  effects. A project with them should play them on an MPC One, Live or X.
+  This is not tested yet.
+- Without SampQOL OS, a track with its own MIDI channel sends the 16 Levels
+  source note, not the real note. A track with MIDI Off sends as MIDI
+  Config sets.
+- Without SampQOL OS, a pad mute always sounds as Mute Type Audio.
+- Without SampQOL OS, a pad with Stereo plays both channels.
+- Without SampQOL OS, the track mutes of each sequence do not play (also
+  after Song Export). All tracks sound.
+- "Insufficient space on drive" is about the internal storage, not the SD
+  card. The internal storage always keeps about 400 MB free. A sample that
+  you load from the SD card is copied to the internal storage, and
+  Normalize makes a second, larger copy. Save your projects and samples on
+  the SD card. Keep the internal storage as stock as possible.
+
+
 Version 0.1.5 (1 November 2026)
 -------------------------------
 

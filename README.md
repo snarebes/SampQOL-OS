@@ -24,12 +24,16 @@ manual.
 - Note Repeat, Cut and Paste in Step Edit
 - Automate: fade the volume, low-pass or high-pass filter in or out
   (Linear, Log or S-Curve), erase all automation at once
-- Select, name, explode and delete tracks and sequences
+- Select, name, explode and delete tracks and sequences. Duplicate a track
+- Mute groups for tracks and submixes. Mute Type: Audio (stops at once) or
+  Event (the notes ring out)
 - Move a track: hold **PAD BANK** and push **-** or **+**
 
 **Mixing and export**
 - Mixer with inserts on pads, tracks, 8 submixes and the master (**PAD FX**)
 - A 3-band kill EQ for each pad, with a live spectrum
+- Sidechain with the Mother Ducker. More insert effects: AIR Compressor and
+  AIR Stereo Width
 - Export the mixdown and stems
 - Resample one pad, with or without its Pad FX
 
@@ -39,16 +43,20 @@ manual.
   You do not lose your chops by accident.
 - Sample Tail
 - To Seq and Looper in Sample Record
+- Record the rear inputs and the USB audio at the same time
+- Tuner: tune a sample and set its root note
 - Preview samples with their own preview volume, also next to the sounds of
   your kit, and make new folders in Sample Select
 
 **Playing**
 - 16 Levels with Scale, Chord and Arp
 - Keys mode for a MIDI keyboard, with a root note
+- MIDI out for each track, on its own MIDI channel
 
 **Workflow**
 - Undo and Redo with a counter ("Undo 2/7")
-- Settings page, FX Select List
+- Settings page, Knob FX List and Insert FX List
+- Change the Knob FX on any screen: hold **KNOB FX** and turn the encoder
 - Template for a new project, random project names
 
 This list shows only the main features. SampQOL OS has many more: see
@@ -101,7 +109,8 @@ then remove the card. See Troubleshooting in the
 
 - [Manual](https://snarebes.github.io/SampQOL-OS/): all features, the safety
   net and troubleshooting. The zip also has the manual (`Manual.html`).
-- [CHANGELOG](CHANGELOG.md): what changed in each version.
+- [Release notes](https://beatops.io/sampqol/changelog) and
+  [CHANGELOG](CHANGELOG.md): what changed in each version.
 
 ## Report a problem
 
