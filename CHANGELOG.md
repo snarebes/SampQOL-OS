@@ -68,6 +68,9 @@ NEW FUNCTIONS
   in grey. Apply sets the played note as the KEYS root note of the pad
   (shown on the screen), with every source. SHIFT + PAD 7 was Double
   Speed: set it back in Settings > Shortcuts.
+- Input monitor without the Knob FX: with Rec Input Effects (Input FX) Off
+  you hear the input dry. With On you hear the Knob FX one time, as in the
+  recording. A change of Monitor (Off, Auto, On) fades, with no click.
 - Source "Rear+USB": record and monitor the rear inputs and the USB audio
   from a computer at the same time. No more switching between them. In
   Sample Record (K1), Input Config and the Tuner.
@@ -139,8 +142,9 @@ NEW FUNCTIONS
 - Pad View: with Steps on, hold SAMPLE and push a pad to select that row.
   Steps stays on. While you hold SAMPLE, the pads light as on the SAMPLE
   screen.
-- Chop Mode: Chop Type Regions also gives 128 regions, and Threshold
-  makes up to 128 slices (all 8 pad banks).
+- Chop Mode: Chop Type Regions also gives 128 regions. Threshold makes up
+  to 128 slices (all 8 pad banks): set the most in Settings > Threshold Max
+  Slices (16, 32, 64 or 128; default 16, as stock).
 - Chop Mode: when you tap the 16th chop of a pad bank, the next pad bank
   shows at once. Tap the next chop on its first pad.
 - New setting "Mixer Opens On" (group FX & AUTOMATION): the page that the
@@ -221,6 +225,9 @@ CHANGED FUNCTIONS
 - Stock project: if not all pads used the Knob FX on stock, the Knob FX
   starts bypassed. Then no pad gets an effect that it did not have on
   stock. If all pads used it, it stays on.
+- If the app stops during SD Card Access, the computer loses the card
+  before the MPC uses it again, so the two never use the card at the same
+  time.
 - After a crash, autorun/logs/last-exit.log on the card holds the crash
   details of the mod. Send the folder autorun/logs with a bug report.
 
@@ -319,14 +326,10 @@ FIXED (STOCK PROBLEMS)
 - Song Export to a sequence keeps the RT Swing. Each track of the new
   sequence gets the RT Swing of its sequence in the first song part.
   Before, the new sequence played without swing.
-- Time Correct keeps all tones of a chord on one pad (16 Levels, Scale,
-  KEYS). Stock kept only one tone.
+- Time Correct keeps all notes that you play at the same time in 16 Levels
+  (also the chords of Scale and KEYS). Stock kept only one of them.
 - Song mode shows the tempo that plays. With BPM: GBL, each row shows the
   global tempo. Stock showed the tempo of the sequence.
-- Input monitor: with Input FX Off you hear the input dry. With Input FX
-  On you hear the Knob FX one time. Stock always sent the monitor through
-  the Knob FX, with Input FX On two times.
-- Input monitor: a change of Monitor (Off, Auto, On) gives no click.
 - A long sample uses less internal storage after an edit (for example
   Normalize) or at the end of Chop Mode. Stock kept an old copy until the
   next save or load.
@@ -341,9 +344,6 @@ FIXED (STOCK PROBLEMS)
   from the MPC, so the MPC and the computer used it at the same time.
   This can damage the files on the card. If the card is busy, a message
   tells you not to copy files.
-- If the app stops during SD Card Access, the computer loses the card
-  before the MPC uses it again. Stock kept the card on the computer and
-  also used it on the MPC, so both used it at the same time.
 - Eject of the SD card in the browser: after you put the card in again,
   your Home Folder and Export folder on the card work. Stock often made
   empty folders where the card was, so the card got a new path and files
@@ -351,17 +351,12 @@ FIXED (STOCK PROBLEMS)
 
 KNOWN ISSUES
 
-- When the MPC plays and you change the sequence (also in Song mode), you
-  can hear a short gap. This occurs more with many tracks or effects.
 - A pad with Out set to a submix or an output still stops at once (with
   a click) when its track gets an Audio Mute.
 - Automate: after you make a sequence with a fade longer, a change of your
   own volume or filter value in another sequence can go back to the old
   value after the next start. This occurs when the project saves while
   the sequence with the fade is selected. Set the value again.
-- AIR Compressor, AIR Stereo Width and Mother Ducker are stock MPC
-  effects. A project with them should play them on an MPC One, Live or X.
-  This is not tested yet.
 - Without SampQOL OS, a track with its own MIDI channel sends the 16 Levels
   source note, not the real note. A track with MIDI Off sends as MIDI
   Config sets.
