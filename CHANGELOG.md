@@ -219,7 +219,7 @@ CHANGED FUNCTIONS
 - Stock project: if not all pads used the Knob FX on stock, the Knob FX
   starts bypassed. Then no pad gets an effect that it did not have on
   stock. If all pads used it, it stays on.
-- If the app stops during SD Card Access, the computer loses the card
+- If SampQOL OS stops during SD Card Access, the computer loses the card
   before the MPC uses it again, so the two never use the card at the same
   time.
 - After a crash, autorun/logs/last-exit.log on the card holds the crash
