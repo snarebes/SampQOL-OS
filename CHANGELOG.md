@@ -108,7 +108,8 @@ NEW FUNCTIONS
 - New setting "Mute Type" (group SEQUENCE): how a pad mute and a track
   mute sound. Audio (default) stops the sound at once. Event stops only
   the new notes, and the notes that sound play to their end. It is for
-  Mute mode, the Pad Mixer, Track Mute, the Ch. Mixer and Explode.
+  Mute mode, the Pad Mixer, Track Mute, the Ch. Mixer and Explode. Track
+  Mute uses Audio by default. In 0.1.5 it sounded as Event.
 - Mute groups for tracks and submixes: tracks (or submixes) in the same
   group mute and unmute together. Set them with K2 (Trk Grp, Sub Grp) on
   the Mixer. K2 on the Pad page (Pad Grp) is the stock pad Mute Grp.
@@ -121,7 +122,8 @@ NEW FUNCTIONS
   follows MIDI Config, as in stock. The track grid shows the channel.
 - Dup. Track: a copy of a track, directly after the track. All pads,
   samples, effects and routes stay. With Events On (B2) the events
-  (notes and automation) of all sequences go along too.
+  (notes and automation) of all sequences go along too. In the Track View,
+  SHIFT + B3 (Dupl/Expl) asks first: B2 Dup. Track or B3 Explode.
 - Song mode: SHIFT + B2 (Clear All) removes all sequences from the song
   at once. UNDO brings the song back.
 - Song mode: with Settings > Song Pads = Quick Add, a pad inserts its
@@ -162,9 +164,6 @@ NEW FUNCTIONS
 
 CHANGED FUNCTIONS
 
-- Track Mute stops the sound at once (Mute Type Audio, the default). In
-  0.1.5 a track mute in Track Mute let the notes that sound play to their
-  end. For that sound, set Mute Type to Event.
 - Automate: a fade belongs to the sequence where you write it. The other
   sequences play your own volume or filter value.
 - Pad colours: Step Edit Play, the Track View and the Mixer Pad page show
@@ -174,19 +173,13 @@ CHANGED FUNCTIONS
   a pad selects that track: green, the current track bright, a muted track
   red, the ENCODER target white. PAD BANK alone still shows the bank
   colours on pads 1 to 8.
-- UNMUTE ALL (SHIFT + MUTE) is one undo step. UNDO brings all the pad
+- UNMUTE ALL (SHIFT + MUTE) also unmutes all muted tracks, on every screen
+  (in 0.1.5 only in Track Mute). It is one undo step: UNDO brings all the
   mutes back. In stock it had no undo. During a recording, the MPC records
   it, as before.
-- UNMUTE ALL (SHIFT + MUTE) also unmutes all muted tracks, on every screen.
-  In 0.1.5 it did this only in Track Mute.
-- Track View: SHIFT + B3 (Dupl/Expl) asks first: B2 Dup. Track or B3
-  Explode.
-- Explode of a track with track effects: To Submix puts the effects one
-  time on a free submix, and the new tracks go to that submix. This uses
-  much less CPU than one copy of the effects per new track.
-- Dup. Track of a track with track effects: To Submix puts the effects one
-  time on a free submix, and the track and its copy go to that submix.
-  Two tracks then use the CPU of one set of effects.
+- Explode and Dup. Track of a track with track effects: To Submix puts the
+  effects one time on a free submix, and all the tracks go to that submix.
+  This uses much less CPU than one copy of the effects per track.
 - Chop Mode Extract to a new track, from a pad with effects: To Track puts
   the effects one time on the new track, not on each chop pad.
 - Chop Mode: Extract asks for the pad of the (first) chop. Push a pad to
