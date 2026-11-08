@@ -293,8 +293,9 @@ FIXED
 - Mixer: hold PAD FX and turn the ENCODER fast through the pads: the MPC
   keeps working. Before, the MPC could stop: the pads did not respond and
   kept the Mixer colours.
-- Mixer: the On / Off of the Color Comp. and Bypass on the COMPRESSOR
-  screen are one setting. They could show different states.
+- Color Compressor on the master: its On / Off in the Mixer and Bypass on
+  the COMPRESSOR screen are one setting. Before, they could show different
+  states.
 - Mixer: the slot list shows the right Reverb (Small, Medium or Large), the
   same as the effect page. It always showed Reverb Small.
 - Pad EQ and Kill EQ: a gain knob turned fully left shows Kill. It could
