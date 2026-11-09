@@ -346,6 +346,8 @@ FIXED (STOCK PROBLEMS)
 
 KNOWN ISSUES
 
+- When the MPC plays and you change the sequence (also in Song mode), you
+  can hear a short gap. This occurs more with many tracks or effects.
 - A pad with Out set to a submix or an output still stops at once (with
   a click) when its track gets an Audio Mute.
 - Automate: after you make a sequence with a fade longer, a change of your
