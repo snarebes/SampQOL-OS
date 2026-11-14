@@ -32,8 +32,9 @@ manual.
 **Mixing and export**
 - Mixer with inserts on pads, tracks, 8 submixes and the master (**PAD FX**)
 - A 3-band kill EQ for each pad, with a live spectrum
-- Sidechain with the Mother Ducker. More insert effects: AIR Compressor and
-  AIR Stereo Width
+- Sidechain with the Mother Ducker. More insert effects: AIR Compressor,
+  AIR Stereo Width, AIR Lo-Fi and AIR Pitch Shifter
+- 16 USB Outputs: each track or submix on its own channel in your DAW
 - Export the mixdown and stems
 - Resample one pad, with or without its Pad FX
 
@@ -43,8 +44,10 @@ manual.
   You do not lose your chops by accident.
 - Sample Tail
 - To Seq and Looper in Sample Record
+- Up to 3 insert effects on the input, and an Input strip in the Mixer
 - Record the rear inputs and the USB audio at the same time
-- Tuner: tune a sample and set its root note
+- Tuner: tune a sample, set its root note and find its key. A new sample
+  gets its key at once (Auto Key)
 - Preview samples with their own preview volume, also next to the sounds of
   your kit, and make new folders in Sample Select
 
@@ -58,6 +61,8 @@ manual.
 - Settings page, Knob FX List and Insert FX List
 - Change the Knob FX on any screen: hold **KNOB FX** and turn the encoder
 - Template for a new project, random project names
+- Load Kit also loads a drum program (.xpm) or a .mpcsample kit
+- Screen Mirror: see the MPC screen live in a browser on your computer
 
 This list shows only the main features. SampQOL OS has many more: see
 [Manual and changes](#manual-and-changes).
@@ -68,6 +73,8 @@ This list shows only the main features. SampQOL OS has many more: see
 - **PAD FX** opens the Mixer. Stock: Pad FX.
 - Pad FX: **SHIFT** + **PAD FX** (Flex Beat), then **B2**. Or set
   **Settings > Shortcuts > Shift+PAD FX** to Pad FX.
+- While the **KNOB FX** bar shows, **B3** turns the Knob FX on or off
+  (Bypass). **SHIFT** + **B3** does the stock function.
 - Select a track: hold **PAD BANK** and turn the encoder.
 - Or select a track with **SHIFT** + **PAD BANK** + pad 1-16.
 - **Settings > Shortcuts** gives back the stock screens.
