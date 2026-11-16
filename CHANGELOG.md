@@ -166,7 +166,10 @@ CHANGED FUNCTIONS
   a MIDI note that sounds stops when you mute.
 - A track with its own MIDI channel follows Pad MIDI Out in MIDI Config
   (Always, When Empty, Never). Before, all its pads always sent MIDI, so
-  the pads with a sample also played the external synth.
+  the pads with a sample also played the external synth. After the
+  update from 0.2.0, your synth can follow the tempo but play no notes:
+  then Pad MIDI Out is When Empty or Never. Set it to Always (the stock
+  default) and all pads send MIDI again.
 - Chop Mode opens at once on a sample without chops, also on a long
   sample: the Chop Type is Manual, with one slice. Stock starts a
   Threshold chop there, and that takes long. For an auto chop, turn K3 to
