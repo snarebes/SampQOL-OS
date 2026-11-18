@@ -132,7 +132,7 @@ firmware plans, I will decide about the source.
 ## Support me
 I'm Snare Bes, a producer. I built SampQOL OS to improve my own quality of life on the MPC Sample. It is free and stays free.
 
-Want to support SampQOL OS? [Leave a tip](https://buy.stripe.com/9B6aEX67g3edacHb4v1VK00), or check out [BeatOps](https://beatops.io), my other project. Beat finished? BeatOps uploads it to YouTube, BeatStars and SoundCloud in a couple of clicks. It makes the video, thumbnail and tags for you. You can start for free.
+Want to support SampQOL OS? [Leave a tip](https://beatops.io/donate), or check out [BeatOps](https://beatops.io), my other project. Beat finished? BeatOps uploads it to YouTube, BeatStars and SoundCloud in a couple of clicks. It makes the video, thumbnail and tags for you. You can start for free.
 
 ## License
 
