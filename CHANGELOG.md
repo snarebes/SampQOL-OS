@@ -36,8 +36,8 @@ HIGHLIGHTS
   sounds played.
 - ERASE + pad: erase several pads at once, also their notes in all
   sequences.
-- Export: the file names have the sequence, so you can export all
-  sequences of a project one after the other.
+- Export: build the file names from blocks: project, sequence, BPM and
+  date. Each sequence gets its own file name.
 - Screen text for blind users: the computer reads the MPC screen aloud.
 - Pad FX on the input, and the FADER can send a MIDI CC.
 
