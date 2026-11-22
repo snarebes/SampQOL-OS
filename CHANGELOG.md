@@ -35,7 +35,7 @@ HIGHLIGHTS
 - Step Edit: mute single notes, and Humanize a programmed beat so it
   sounds played.
 - ERASE + pad: erase several pads at once, also their notes in all
-  sequences.
+  sequences. It also works on the SAMPLE RECORD screen.
 - Export: build the file names from blocks: project, sequence, BPM and
   date. Each sequence gets its own file name.
 - Screen Mirror for blind users: the screen reader of the computer reads
