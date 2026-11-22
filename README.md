@@ -70,8 +70,8 @@ manual.
   the .xtd drum track of an MPC 3 expansion
 - Multi Select: change several pads at once, on the SAMPLE screen and in
   the Mixer
-- Screen text for blind users: the computer reads the MPC screen aloud
-- Screen Mirror: see the MPC screen live in a browser on your computer
+- Screen Mirror: see the MPC screen live in a browser on your computer.
+  For blind users, the screen reader of the computer reads it aloud
 
 This list shows only the main features. SampQOL OS has many more: see
 [Manual and changes](#manual-and-changes).

@@ -38,7 +38,8 @@ HIGHLIGHTS
   sequences.
 - Export: build the file names from blocks: project, sequence, BPM and
   date. Each sequence gets its own file name.
-- Screen text for blind users: the computer reads the MPC screen aloud.
+- Screen Mirror for blind users: the screen reader of the computer reads
+  the MPC screen aloud.
 - Pad FX on the input, and the FADER can send a MIDI CC.
 
 NEW FUNCTIONS
