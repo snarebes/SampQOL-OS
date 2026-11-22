@@ -22,6 +22,9 @@ manual.
 - Record pad mutes and track mutes into a sequence. Each sequence keeps its
   own track mutes, as on the MPC Live
 - Note Repeat, Cut and Paste in Step Edit
+- Step Edit: mute single notes, Humanize a programmed beat, zoom from a
+  quarter bar to 32 bars
+- Pad mutes and time signature for each sequence
 - Automate: fade the volume, low-pass or high-pass filter in or out
   (Linear, Log or S-Curve), erase all automation at once
 - Select, name, explode and delete tracks and sequences. Duplicate a track
@@ -43,6 +46,8 @@ manual.
 - Chop guard: after you edit slices by hand, a new Chop Type asks first.
   You do not lose your chops by accident.
 - Sample Tail
+- Stems Separation on the MPC: split a sample into drums, bass, vocals and
+  other
 - To Seq and Looper in Sample Record
 - Up to 3 insert effects on the input, and an Input strip in the Mixer
 - Record the rear inputs and the USB audio at the same time
@@ -61,7 +66,11 @@ manual.
 - Settings page, Knob FX List and Insert FX List
 - Change the Knob FX on any screen: hold **KNOB FX** and turn the encoder
 - Template for a new project, random project names
-- Load Kit also loads a drum program (.xpm) or a .mpcsample kit
+- Load Kit from Sample Select: a drum program (.xpm), a .mpcsample kit or
+  the .xtd drum track of an MPC 3 expansion
+- Multi Select: change several pads at once, on the SAMPLE screen and in
+  the Mixer
+- Screen text for blind users: the computer reads the MPC screen aloud
 - Screen Mirror: see the MPC screen live in a browser on your computer
 
 This list shows only the main features. SampQOL OS has many more: see
@@ -97,14 +106,14 @@ Download SampQOL OS only from [Releases](../../releases) or from
    SampQOL OS version there.)
 2. Unzip the zip file. Copy the folder `autorun` to the root of an exFAT
    microSD card.
-3. Set the MPC off. Put the card in the MPC. Set the MPC on.
+3. Turn off the MPC. Put the card in the MPC. Turn on the MPC.
 4. SampQOL OS starts by itself. You do not push a button.
 
 Update from an earlier version: replace the folder `autorun` on the card with
 the new one. Your settings stay: `mpcqol.conf` is on the top level of the
 card, not in the folder `autorun`.
 
-Go back to stock: set the MPC on without the card. To use the card on stock,
+Go back to stock: turn on the MPC without the card. To use the card on stock,
 rename the folder `autorun` (for example to `autorun-off`), or move it into a
 different folder on the card. Name it `autorun` again to start SampQOL OS.
 

@@ -16,6 +16,258 @@ Tested only with MPC Sample 1.3.0. MPC One, Live and X are not tested yet.
 SampQOL OS (c) 2026 Snare Bes. All rights reserved. See LICENSE.txt.
 Akai Professional, MPC and MPC Sample are trademarks of inMusic Brands, Inc.
 
+Version 0.4.0 (22 November 2026)
+--------------------------------
+
+All changes since version 0.3.0.
+
+HIGHLIGHTS
+
+- Stems Separation: split a sample into drums, bass, vocals and other,
+  on the MPC itself.
+- Load Kit from Sample Select: browse kits as samples, also the .xtd drum
+  tracks of MPC 3 expansions.
+- Pad mutes per sequence: each sequence keeps its own pad mutes, as the
+  track mutes.
+- Time signature per sequence, for example A01 in 4/4 and A02 in 3/4.
+- Multi Select: change several pads at once, on the SAMPLE screen and in
+  the Mixer.
+- Step Edit: mute single notes, and Humanize a programmed beat so it
+  sounds played.
+- ERASE + pad: erase several pads at once, also their notes in all
+  sequences.
+- Export: the file names have the sequence, so you can export all
+  sequences of a project one after the other.
+- Screen text for blind users: the computer reads the MPC screen aloud.
+- Pad FX on the input, and the FADER can send a MIDI CC.
+
+NEW FUNCTIONS
+
+- USB Click Repair (Beta): in Settings. It repairs the short
+  clicks in the USB audio input that some phones send (reported: Google
+  Pixel 8a). Default Off. Idea from USB DeClick by odeo0.
+- Pad FX on the input: put the stock Pad FX (for example Beat Repeat) on
+  the Input FX page. The Pad FX pads then work on the input and the main
+  mix at the same time.
+- The FADER can send a MIDI CC: select MIDI CC in the FADER menu. Set
+  the CC number and the channel on the Overrides page (B2) of the FADER
+  menu.
+- Time signature per sequence: in Settings, set Time Sig to Per Seq. Each
+  sequence keeps its own time signature (for example A01 in 4/4, A02 in
+  3/4). SHIFT + K2 on the SEQ screen changes only the current sequence.
+- Screen text for blind users: over the USB cable, the screen reader of
+  your computer reads the MPC screen aloud. Open
+  http://mpc-sample.local:7410/speak in a browser. It reads the screen
+  name, the selected item, the knob values, the file names in the
+  browsers, each character that you type, the Step Edit cell under the
+  cursor and what is muted. Other tools can read the text at /a11y.txt.
+- Load Kit from Sample Select: the list also shows kits (.xpm, .xtd and
+  .mpcsample). B3 or the ENCODER loads the kit. When the track has
+  samples, the MPC asks: Replace, or New Track (one UNDO removes the new
+  track and the kit). A kit with a preview file in [Previews] plays it.
+  SHIFT + K1 shows All, Audio (samples only) or Kits; the MPC keeps your
+  last choice.
+- Load Kit also loads a .xtd drum track (MPC 3 expansions, for example
+  from an MPC Live 3): it loads the samples of the first layer of each pad.
+- Stems Separation: separate a sample into stems (Drums, Bass, Vocals,
+  Other), on the MPC itself. Push SAMPLE, select the pad, then SHIFT + B3.
+  Each stem goes
+  to its own pad, or Merge puts the stems that you keep on one pad (for
+  example an instrumental without the vocals). Fast or High quality. The
+  chops of the sample stay on each stem. One UNDO removes the stems. You
+  can also put Stems Separation on a SHIFT + pad (Settings > Shortcuts).
+- ERASE + pad can also erase the notes and automation of the pad in all
+  sequences: set Events on (B2) in the ERASE PAD window. The window shows
+  the sequences that have notes of the pad. The MPC keeps your last
+  choice. It also works on the SAMPLE RECORD screen, so you can remove a
+  To Seq take in one step.
+- ERASE PAD for several pads at once: in the ERASE PAD window, push more
+  pads to add them (also from other pad banks). Do It! erases all of them,
+  and one UNDO brings all of them back. The chosen pads light red.
+- Mute notes in Step Edit: select notes in the Pad View or Track View and
+  push MUTE. The notes stay but do not play, and they show grey. MUTE
+  again on the same notes plays them again. With Mute Type Audio, the pad
+  stops at a muted note. Notes of a pad or track that a mute or a Solo
+  silences also show grey.
+- Humanize in the Pad View (SHIFT + B3): small random changes to the
+  timing, velocity and length of the notes, so a programmed beat sounds
+  played. Feel keeps the strong beats steady and adds a slow drift;
+  Eagerness puts all notes ahead of or behind the beat. Shuffle until you
+  like it, then Done; Cancel puts the notes back. Idea by planjm.
+- Multi Select: change several pads at once. On the SAMPLE screen, hold
+  SAMPLE and hold a pad for 1 second, then add pads with SAMPLE + pad. A
+  knob turn, the Key and the KEYS root note then set the same value on all
+  selected pads. One UNDO puts all of them back. Settings can turn it off.
+- Multi Select in the Mixer: on the Pad, Track and Submix pages, hold PAD FX
+  and hold a pad for 1 second, then add pads, tracks or submixes with
+  PAD FX + pad. K1 then moves the volume of all of them by the same dB, K2
+  sets the same mute group and K3 the same Out. One UNDO per turn.
+
+CHANGED FUNCTIONS
+
+- SEQ mode, SEQ + pad and COPY of a sequence: the current sequence is
+  magenta, a sequence with events is dim magenta. Before, they were green
+  and yellow, the same green as the tracks in Track Mute.
+- Submixes 2-8 that no pad or track goes to use less CPU.
+- When a file in the autorun folder is not the file of the release zip,
+  SampQOL OS does not start (as before). The file autorun/logs/events.log
+  then shows "pin check failed".
+- Chop Mode Extract: the recorded chop notes go to the new chop pads, in
+  every sequence (K3 Events Yes). Before, they stayed on the chopped pad.
+  With Replace, the MPC removes the old notes of the replaced pads.
+- Load Project: the ENCODER push on a .xpm or .xtd file loads the kit, as
+  B3 Load Kit.
+- Rec Quantize popup (SHIFT + PAD 10): K1 (Swing) shows and sets the
+  swing of the recorded notes (50 to 75 %). It is the Time Correct Swing,
+  which Note Repeat also uses. Stock shows it only as a bar on the Time
+  Correct screen (SHIFT + PAD 14).
+- More Undo steps: the KEYS root note (SAMPLE, Tune page, SHIFT + K1),
+  the Tuner Apply, a pad mute or unmute in Mute mode (as on the Pad
+  Mixer), and in the Mixer a turn of K3 (Out) or of the track or submix
+  mute group (K2). Auto Key is no Undo step of its own: the first Undo
+  after a recording or a load removes the new sample, and its key goes
+  with it.
+- Pad View and Track View: with the FADER on Zoom, SHIFT + FADER zooms the
+  bars (as SHIFT + K3) and the FADER the rows. Settings > Fader Overrides >
+  Fader Zoom swaps them.
+- Pad View and Track View: Bars zooms from 1/4 bar (a column = 1/64) to 32
+  bars (a column = 2 bars). Was 1 to 8 bars.
+- SHIFT + PLAY loops exactly the selection, also a part of a bar (for
+  example 2 beats or one step), in all time signatures. Before, it looped
+  whole bars of 4/4: in 5/4 it also played the next bar, in 3/4 the bar
+  before.
+- Settings: the groups open and close, so the list is short. The MPC keeps
+  the groups that you opened. On a new install, all groups are closed.
+- CPU/RAM Monitor: a new install uses Warn Only. The bar then shows only
+  when the audio processing is near its limit for 3 seconds, when the RAM
+  is almost full, or after an audio dropout. Your saved setting stays.
+- To Seq and Looper: with the metronome set to Record, you hear the click
+  during the whole take, also in each Looper pass. When the loop only
+  plays, the click stops.
+- Looper (SAMPLE RECORD): when you set Looper on, K2 (the recording
+  length) goes to Free. When you set K2 to Seq, Looper goes off.
+- To Seq: while you record on a pad, you do not hear the old take of that
+  pad. Only a Looper layer plays the old loop, so you can play on top of
+  it. Idea by macdonaldster.
+- Export: the file names have the sequence, for example
+  "MyTrack - S02 Verse - Tr01 - Drums.wav", so you can export all
+  sequences of a project. Before, the second sequence asked "File exists"
+  and wrote over or next to the files of the first. The row File Name sets
+  the parts of the name and their order: Project, Sequence, BPM and the
+  date (YYMMDD or YY-MM-DD). It replaces the row BPM in Name. B3 Export
+  first shows the name: you can change it or add text. Settings > Time
+  Zone sets the local date (the MPC clock runs in UTC).
+- Name screens (Save Sample, Save Project, Rename): you can type "_".
+- Pad mutes per sequence, as track mutes: each sequence keeps its own pad
+  mutes. A pad that you mute is muted only in the current sequence. Before,
+  a pad mute stayed on in all sequences, and a recorded pad mute could
+  stay on in the next sequence.
+- Settings > Ask Before Erase Pad has a new value, Pads With Events:
+  ERASE + pad asks only for a pad that has notes or automation in a
+  sequence. It is the default for a new install; your saved setting stays
+  (On is now Always). Off is the stock ERASE + pad: the MPC erases the
+  sample at once, without a question.
+- Sample Select: a pad with a sample now plays its own sound (Own Sample).
+  The selected pad or an empty pad plays the file. This is the new setting
+  for all users, also after an update. For the old way, turn SHIFT + K2 to
+  the left (Preview). The MPC keeps that choice.
+- Pad View and Track View: a note that you played a little early belongs
+  to the grid line where you see most of it. The cursor and a selection
+  take it there. A short note stays in the cell where you see it.
+- Pad View: the small + shows only on notes that you cannot see apart (two
+  notes of a pad at almost the same time). Before, at Bar zoom it showed on
+  almost every note.
+
+FIXED
+
+- Screen changes show no other screen in between: PAD FX to the Mixer and
+  back to SEQ or SAMPLE RECORD, Pad View, Track View, Settings, the Export
+  page, the Input FX page, the Mixer pages (B1, B2) and a quick SEQ tap on
+  the SAMPLE screen. Before, another screen, an empty page or the sequence
+  name could show for a moment.
+- PAD BANK + ENCODER: the pads without a track stay off while you turn.
+  Before, they could light up for a moment at each step.
+- A pad colour that you give with Rename stays after a project load and
+  after a restart. Before, the pads of the current track went back to the
+  default colour.
+- Pad View and Track View show the bar lines, bar numbers and position of
+  the time signature of the sequence. Before, they showed bars of 4/4 in
+  all time signatures.
+- New track: the pads with a sample are blue, as on the other tracks. Before,
+  they were green on the SAMPLE screen (the colour of the track pick and
+  Track Mute). A project with these green tracks gets blue pads when you
+  load it.
+- To Seq with Looper on: you hear the first click of the COUNT-IN. Before,
+  the first click (and all sound for a short moment) was often lost when
+  you tapped the pad.
+- To Seq and Looper: a take gets the tempo of the sequence. With Warp on
+  in mode Pitch, it plays at the right pitch and speed. Before, the MPC
+  guessed the tempo of the take, and the take could play out of tune and
+  too fast (for example half a semitone and 4 BPM).
+- Rename a track, submix, pad or sequence: an ENCODER push goes to the
+  next character, as in stock. Before, the push did nothing.
+- SEQ mode: the pads show which sequences have events at once. Before, the
+  first time after a new or loaded project, all pads lit, and after a
+  recording or an Undo a pad could show the old state until PLAY, STOP or
+  a pad press.
+- SAMPLE screen, Pad FX and Flex Beat with the KNOB FX bar open: SEQ + pad
+  changes the sequence and you stay on the screen. Before, SEQ opened the
+  SEQ screen.
+- Chop Mode: when you go to SEQ and back to SAMPLE, the SAMPLE screen
+  shows the bank of before Chop Mode. Before, it showed bank A, and you
+  had to find the sample again.
+- COPY on the same track, B3 Replace: each destination pad gets its own
+  copy of the sample, as in stock. Before, the pads shared one sample, and
+  a chop change on one pad changed the chops on the other pads too.
+- When the internal storage is full, a project save keeps the pad names and
+  track MIDI channels of before. Before, a save on full storage could lose
+  them.
+- Looper with a long loop: the MPC uses much less memory when it puts the
+  passes together. Before, a loop of almost 3 minutes used more than
+  100 MB, and with little free memory the MPC could freeze.
+- A home or export folder typed by hand in mpcqol.conf without a "/"
+  opens the normal folder. Before, the MPC could crash when you opened the
+  folder pick in QOL Settings or Export.
+
+FIXED (STOCK PROBLEMS)
+
+- Chop Mode: your chops stay after a restart, also when you made no other
+  change after them. Stock did not save chop changes in the project, so
+  the next Chop Mode chopped the sample again and your own chops were lost.
+- Chop Mode: a pad saved with Chop Type Threshold keeps its slices after a
+  load. Stock saved the wrong Threshold value, so the pad got other slices
+  (for example 63 in place of 21).
+- A pad mute with Mute Type Audio (Mute mode, Pad Mixer, Solo) fades the
+  pad out in a few ms, without a click. Stock stopped the sound at once,
+  with a click.
+- A track mute with Mute Type Audio also fades a pad with Out set to an
+  output, without a click. Stock stopped that sound at once, with a click.
+- Chop Mode with Note On: when you release a pad, the slice of the next
+  pad that you hold keeps playing, also in a recording. Stock stopped that
+  slice too, so both slices went silent.
+- Chop Mode recording with Rec Quantize: two different chops on one step
+  (for example a kick and a hi-hat) both stay when the pad is Poly. Stock
+  kept only the last chop. With Mono, the last chop replaces the other, as
+  you hear it.
+- In SEQ mode, ERASE + pad clears that sequence, and the current sequence
+  stays, also while it plays. Stock selected the cleared, empty sequence:
+  it played next, and a COPY right after it copied the empty sequence.
+
+KNOWN ISSUES
+
+- A project with a different time signature per sequence opens with one
+  time signature for all sequences on a stock MPC Sample, and with Time Sig
+  set to All.
+- Without SampQOL OS (also on the MPC Live), the pad mutes of each sequence
+  do not play. The pads have the mutes of the save in all sequences.
+- Mute notes uses the probability of the note: a muted note has probability
+  0, and unmute sets it to 100 %. The MPC Sample has no probability, so you
+  do not lose anything there. On an MPC with probability (MPC Live, One, X):
+  a muted note shows 0 %, and a note that you mute and unmute on the MPC
+  Sample loses its old probability.
+- Without SampQOL OS (also on the MPC Live), a Chop Mode recording with
+  Note On can stop a slice too early: at the end of the slice before it.
+
 Version 0.3.0 (14 November 2026)
 --------------------------------
 
