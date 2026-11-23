@@ -16,6 +16,29 @@ Tested only with MPC Sample 1.3.0. MPC One, Live and X are not tested yet.
 SampQOL OS (c) 2026 Snare Bes. All rights reserved. See LICENSE.txt.
 Akai Professional, MPC and MPC Sample are trademarks of inMusic Brands, Inc.
 
+Version 0.4.2 (23 November 2026)
+--------------------------------
+
+All changes since version 0.4.1.
+
+FIXED
+
+- Notes that you copy to another track play with the same timing. RT Swing
+  (SEQ, K3) is one value for the whole sequence, for all drum tracks. Each
+  track had its own RT Swing, so the copy played with a different swing
+  (GitHub #95).
+
+- 16 LEVELS in Scale, on a track with its own MIDI channel: the pad
+  pressure (aftertouch) goes out on the note that plays. It went out on
+  the pad's own note, a note that did not play. A synth could then keep a
+  note playing after you let go of the pad.
+
+- Load Kit loads a drum program (.xpm) that MPC 3.9 or newer saved. It
+  showed "Only a drum program can load as a kit", also for a drum program.
+  MPC 3.9 saves a .xpm in a new file format, with its WAV files in a folder
+  next to it: for Boom Kit.xpm, the folder Boom Kit_[ProgramData]. As
+  before, only the samples load.
+
 Version 0.4.1 (23 November 2026)
 --------------------------------
 
