@@ -16,6 +16,47 @@ Tested only with MPC Sample 1.3.0. MPC One, Live and X are not tested yet.
 SampQOL OS (c) 2026 Snare Bes. All rights reserved. See LICENSE.txt.
 Akai Professional, MPC and MPC Sample are trademarks of inMusic Brands, Inc.
 
+Version 0.4.1 (23 November 2026)
+--------------------------------
+
+All changes since version 0.4.0.
+
+FIXED
+
+- Save Sample and Save Project: Do It! (B3) shows the folder page again,
+  so you can pick the folder and the drive. In 0.4.0 the page did not
+  show: the first B3 seemed to do nothing, the second B3 saved into the
+  default folder (Samples/User or Projects/User on Internal, or the
+  Projects folder on the SD card), and after the first B3 the ENCODER
+  seemed to stop working.
+- Monitor On: from start-up, you hear the input without the Knob FX and
+  the master effects. Before, you heard these effects on the input until
+  you opened SAMPLE RECORD one time.
+- Stems Separation: when the internal storage is too full, the screen tells
+  you to save the project to the SD card and load it again. It showed only
+  "Not enough space", without what to do.
+- Stems Separation works with a sample name that holds " * : < > ? \ or |,
+  and with a long sample name that has an accent (é, ü). The split failed:
+  the SD card did not accept the stem file name. The stem names get "_" in
+  place of these characters.
+- Stems Separation: when a split file is missing on the SD card, the screen
+  shows which file and where ("Not found: autorun/split/spl4h.bin"). It
+  showed only "Split files missing".
+- The mod screens show names with accents and other special characters
+  (é, ü, ñ, €) correctly. "café" showed as "cafÃ©".
+- Time Sig Per Seq: a loaded project gives each sequence the right length
+  for its time signature. In 0.4.0 a sequence in for example 7/8 could
+  load with the length of 4/4 bars, so it played too long.
+- Pad View and Track View: each note of a pad shows as its own block. In
+  0.4.0 two notes side by side, or a note inside a long note, showed as one
+  block, so you could not see the second note. In the Track View with very
+  many notes, the last notes did not show.
+
+FIXED (STOCK PROBLEMS)
+
+- Resample: a second pad push on the "Select pad" screen does nothing.
+  Stock started a second render, and the MPC froze on the progress bar.
+
 Version 0.4.0 (22 November 2026)
 --------------------------------
 
