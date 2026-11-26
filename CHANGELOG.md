@@ -39,6 +39,12 @@ FIXED
   next to it: for Boom Kit.xpm, the folder Boom Kit_[ProgramData]. As
   before, only the samples load.
 
+KNOWN ISSUES
+
+- The FADER MIDI CC Number and MIDI CC Channel go back to CC 7 and
+  channel 1 when you restart the MPC. This also occurs when you set them
+  in mpcqol.conf. Set them again after each start.
+
 Version 0.4.1 (23 November 2026)
 --------------------------------
 
