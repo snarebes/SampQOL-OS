@@ -58,7 +58,7 @@ manual.
 
 **Playing**
 - 16 Levels with Scale, Chord and Arp
-- Keys mode for a MIDI keyboard, with a root note
+- Keys: play samples chromatically from a MIDI keyboard, with a root note
 - MIDI out for each track, on its own MIDI channel
 
 **Workflow**
